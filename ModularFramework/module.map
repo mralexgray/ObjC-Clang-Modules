@@ -1,0 +1,11 @@
+
+framework module ModularFramework [system] {
+
+  umbrella "Headers"
+  export *
+  module * { export * }
+
+}
+
+
+//  link framework "Cocoa"
