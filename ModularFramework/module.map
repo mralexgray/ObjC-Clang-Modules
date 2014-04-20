@@ -6,11 +6,20 @@ framework module ModularFramework {
   module * { export * }
   export *
   
-  explicit module SubUmbrella  {
+  framework module SubSubUmbrella {
+//   header "Headers"
+    export *
+  }
+
+//  explicit 
+// module SubUmbrella  {
+//    module * { export * }
+//    export *
+//  }
 //      header "SubUmbrella.h"
 //      module * { export *  }
-      export *
-    }
+//      export *
+//    }
 }
 //    umbrella header "SubUmbrella.h"
 

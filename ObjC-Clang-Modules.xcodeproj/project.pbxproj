@@ -40,6 +40,7 @@
 		7B3EE33D189AAE370011F7DA /* ModularApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3EE33C189AAE370011F7DA /* ModularApp.xib */; };
 		7B6B3F9E189B0225003B3C45 /* libModularSubLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */; };
 		7BB6588F189452DB0005DC6E /* LLVM.logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5C6D81893831700826BE8 /* LLVM.logo.icns */; };
+		7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */; };
 		7BD621191903AD2E004FB78D /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; };
 		7BD6211A1903AD3E004FB78D /* ModularFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD621151903AB05004FB78D /* ModularFramework.m */; };
 		7BD6211B1903AD4B004FB78D /* SubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB40CA185799C600AF7C34 /* SubUmbrella.m */; };
@@ -78,6 +79,20 @@
 			remoteGlobalIDString = 7BEB40BF185799C500AF7C34;
 			remoteInfo = ModularFramework;
 		};
+		7BC4A07A1903CEAE001304AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7BC4A0471903CEAE001304AD;
+			remoteInfo = SubSubUmbrella;
+		};
+		7BC4A0881903D11A001304AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC4A0461903CEAE001304AD;
+			remoteInfo = SubSubUmbrella;
+		};
 		7BD621171903AC0F004FB78D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
@@ -88,6 +103,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7BC4A08A1903D123001304AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BD621221903B73C004FB78D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,20 +144,19 @@
 		7B6B3F99189B01E3003B3C45 /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModularFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModularSubLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularSubLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7775701899A1B4002A4CBC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7B7775711899A1DB002A4CBC /* .modules-cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ".modules-cache"; sourceTree = "<group>"; };
+		7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ModularSubLibraryTests.octest; path = "/Volumes/2T/ServiceData/dev/ObjC-Clang-Modules/build/Debug/ModularSubLibraryTests.octest"; sourceTree = "<absolute>"; };
 		7B77757A1899C152002A4CBC /* ModularCLI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularCLI.m; sourceTree = "<group>"; };
+		7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubSubUmbrella.xcodeproj; path = SubUmbrella/SubSubUmbrella/SubSubUmbrella.xcodeproj; sourceTree = SOURCE_ROOT; };
 		7BD621141903AAB8004FB78D /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModularFramework.m; sourceTree = "<group>"; };
+		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModularFramework.m; path = ModularFramework/ModularFramework.m; sourceTree = "<group>"; };
 		7BD6211F1903AE47004FB78D /* SubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubUmbrella.h; sourceTree = "<group>"; };
-		7BE5C6D81893831700826BE8 /* LLVM.logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = LLVM.logo.icns; path = Icon/LLVM.logo.icns; sourceTree = "<group>"; };
+		7BE5C6D81893831700826BE8 /* LLVM.logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = LLVM.logo.icns; path = ModularFramework/Icon/LLVM.logo.icns; sourceTree = "<group>"; };
 		7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ModularApp-Info.plist"; path = "ModularApp/ModularApp-Info.plist"; sourceTree = "<group>"; };
 		7BEB406A18578E5800AF7C34 /* ModularApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ModularApp.m; path = ModularApp/ModularApp.m; sourceTree = "<group>"; };
 		7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ModularFramework-Info.plist"; path = "ModularFramework/ModularFramework-Info.plist"; sourceTree = "<group>"; };
-		7BEB40C9185799C600AF7C34 /* ModularFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModularFramework.h; sourceTree = "<group>"; };
+		7BEB40C9185799C600AF7C34 /* ModularFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModularFramework.h; path = ModularFramework/ModularFramework.h; sourceTree = "<group>"; };
 		7BEB40CA185799C600AF7C34 /* SubUmbrella.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubUmbrella.m; sourceTree = "<group>"; };
-		7BEB40E618579B1B00AF7C34 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = text; path = module.map; sourceTree = "<group>"; };
+		7BEB40E618579B1B00AF7C34 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = text; name = module.map; path = ModularFramework/module.map; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,27 +184,41 @@
 				7B302F381896501E0050EAF7 /* ModularSubLibrary.h */,
 				7B302F391896501E0050EAF7 /* ModularSubLibrary.m */,
 				7B302F4C1896501E0050EAF7 /* ModularSubLibraryTests.m */,
+				7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */,
 			);
 			path = ModularSubLibrary;
 			sourceTree = "<group>";
 		};
-		7B6B3F9D189B01EE003B3C45 /* Prodcuts */ = {
+		7BC4A0761903CEAE001304AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B6B3F99189B01E3003B3C45 /* ModularApp.app */,
-				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
-				7BD621141903AAB8004FB78D /* SubUmbrella.framework */,
-				7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */,
-				7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */,
+				7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */,
 			);
-			name = Prodcuts;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BC4A0971903E7FE001304AD /* ModularFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7BEB40C9185799C600AF7C34 /* ModularFramework.h */,
+				7BD621151903AB05004FB78D /* ModularFramework.m */,
+				7BEB40E618579B1B00AF7C34 /* module.map */,
+				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
+				7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */,
+				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
+				7B302F351896501E0050EAF7 /* ModularSubLibrary */,
+				7BD6211D1903ADF8004FB78D /* SubUmbrella */,
+			);
+			name = ModularFramework;
 			sourceTree = "<group>";
 		};
 		7BD6211D1903ADF8004FB78D /* SubUmbrella */ = {
 			isa = PBXGroup;
 			children = (
-				7BEB40CA185799C600AF7C34 /* SubUmbrella.m */,
 				7BD6211F1903AE47004FB78D /* SubUmbrella.h */,
+				7BEB40CA185799C600AF7C34 /* SubUmbrella.m */,
+				7BD621141903AAB8004FB78D /* SubUmbrella.framework */,
+				7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */,
 			);
 			name = SubUmbrella;
 			path = ModularFramework;
@@ -189,45 +227,21 @@
 		7BEB404B18578E5800AF7C34 = {
 			isa = PBXGroup;
 			children = (
-				7B77757A1899C152002A4CBC /* ModularCLI.m */,
 				7BF5CC5B189737F4000FE0C2 /* ModularApp */,
-				7BEB40C2185799C600AF7C34 /* ModularFramework */,
-				7BD6211D1903ADF8004FB78D /* SubUmbrella */,
-				7B302F351896501E0050EAF7 /* ModularSubLibrary */,
-				7BF5CC5C18973854000FE0C2 /* Resources */,
-				7B6B3F9D189B01EE003B3C45 /* Prodcuts */,
+				7BC4A0971903E7FE001304AD /* ModularFramework */,
 			);
-			sourceTree = "<group>";
-		};
-		7BEB40C2185799C600AF7C34 /* ModularFramework */ = {
-			isa = PBXGroup;
-			children = (
-				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
-				7BEB40C9185799C600AF7C34 /* ModularFramework.h */,
-				7BD621151903AB05004FB78D /* ModularFramework.m */,
-				7BEB40E618579B1B00AF7C34 /* module.map */,
-			);
-			path = ModularFramework;
 			sourceTree = "<group>";
 		};
 		7BF5CC5B189737F4000FE0C2 /* ModularApp */ = {
 			isa = PBXGroup;
 			children = (
-				7B3EE33C189AAE370011F7DA /* ModularApp.xib */,
+				7B77757A1899C152002A4CBC /* ModularCLI.m */,
 				7BEB406A18578E5800AF7C34 /* ModularApp.m */,
+				7B6B3F99189B01E3003B3C45 /* ModularApp.app */,
+				7B3EE33C189AAE370011F7DA /* ModularApp.xib */,
+				7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */,
 			);
 			name = ModularApp;
-			sourceTree = "<group>";
-		};
-		7BF5CC5C18973854000FE0C2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7B7775701899A1B4002A4CBC /* .gitignore */,
-				7B7775711899A1DB002A4CBC /* .modules-cache */,
-				7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */,
-				7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +315,12 @@
 			buildPhases = (
 				7BD621051903AAB8004FB78D /* Sources */,
 				7BD621091903AAB8004FB78D /* Headers */,
+				7BC4A08A1903D123001304AD /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BC4A0891903D11A001304AD /* PBXTargetDependency */,
 			);
 			name = SubUmbrella;
 			productName = ModularFramework;
@@ -378,6 +394,12 @@
 			mainGroup = 7BEB404B18578E5800AF7C34;
 			productRefGroup = 7BEB404B18578E5800AF7C34;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7BC4A0761903CEAE001304AD /* Products */;
+					ProjectRef = 7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7BEB405318578E5800AF7C34 /* ModularApp */,
@@ -390,6 +412,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SubSubUmbrella.framework;
+			remoteRef = 7BC4A07A1903CEAE001304AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7B302F3D1896501E0050EAF7 /* Resources */ = {
@@ -552,6 +584,11 @@
 			target = 7BEB40BF185799C500AF7C34 /* ModularFramework */;
 			targetProxy = 7B9F08FE189454D7000F35BA /* PBXContainerItemProxy */;
 		};
+		7BC4A0891903D11A001304AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SubSubUmbrella;
+			targetProxy = 7BC4A0881903D11A001304AD /* PBXContainerItemProxy */;
+		};
 		7BD621181903AC0F004FB78D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BD621021903AAB8004FB78D /* SubUmbrella */;
@@ -701,7 +738,15 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				INSTALL_PATH = "@rpath";
+				OTHER_LDFLAGS = (
+					"-sub_umbrella",
+					SubSubUmbrella,
+					"-framework",
+					SubSubUmbrella,
+				);
 				PRODUCT_NAME = SubUmbrella;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -710,7 +755,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				INSTALL_PATH = "@rpath";
+				OTHER_LDFLAGS = (
+					"-sub_umbrella",
+					SubSubUmbrella,
+					"-framework",
+					SubSubUmbrella,
+				);
 				PRODUCT_NAME = SubUmbrella;
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -743,10 +796,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = (
-					"-F",
-					build,
-				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -758,10 +807,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = (
-					"-F",
-					build,
-				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -770,17 +815,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
-				INSTALL_GROUP = wheel;
-				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/Frameworks;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
+					"-framework",
+					SubUmbrella,
+					"-sub_umbrella",
+					SubUmbrella,
 				);
 				WRAPPER_EXTENSION = framework;
 			};
@@ -790,13 +841,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
-				INSTALL_GROUP = wheel;
-				INSTALL_OWNER = root;
+				INSTALL_PATH = /Library/Frameworks;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
+					"-framework",
+					SubUmbrella,
+					"-sub_umbrella",
+					SubUmbrella,
 				);
 				WRAPPER_EXTENSION = framework;
 			};

@@ -21,7 +21,10 @@
 
   SubLibPrint( ModularSubLibrary.new );
   SubLibPrint( SubLibRunCLITest()    );
-  SubLibPrint( SubUmbrella.new       );
+  SubLibPrint( SubUmbrella.new      );
+  SubLibPrint( SubSubUmbrella.availableSounds);
+ 
+  
 }
 
 - (void) testPrivateIvars:(PrivateIvar*)i {

@@ -1,0 +1,198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BC4A0591903CEAE001304AD /* SubSubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */; };
+		7BC4A07E1903CEFF001304AD /* SubSubUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC4A09A1903EB5C001304AD /* TittieTwisterShellyHack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubSubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSubUmbrella.h; sourceTree = "<group>"; };
+		7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSubUmbrella.m; sourceTree = "<group>"; };
+		7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TittieTwisterShellyHack.mp3; sourceTree = "<group>"; };
+		7BC4A0991903EA90001304AD /* SubSubUmbrella-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubSubUmbrella-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		7BC4A03D1903CEAE001304AD = {
+			isa = PBXGroup;
+			children = (
+				7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */,
+				7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */,
+				7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */,
+				7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */,
+				7BC4A0991903EA90001304AD /* SubSubUmbrella-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7BC4A0441903CEAE001304AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC4A07E1903CEFF001304AD /* SubSubUmbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BC4A0461903CEAE001304AD /* SubSubUmbrella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC4A06F1903CEAE001304AD /* Build configuration list for PBXNativeTarget "SubSubUmbrella" */;
+			buildPhases = (
+				7BC4A0421903CEAE001304AD /* Sources */,
+				7BC4A0441903CEAE001304AD /* Headers */,
+				7BC4A0451903CEAE001304AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubSubUmbrella;
+			productName = SubSubUmbrella;
+			productReference = 7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BC4A03E1903CEAE001304AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Gray";
+			};
+			buildConfigurationList = 7BC4A0411903CEAE001304AD /* Build configuration list for PBXProject "SubSubUmbrella" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7BC4A03D1903CEAE001304AD;
+			productRefGroup = 7BC4A03D1903CEAE001304AD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC4A0461903CEAE001304AD /* SubSubUmbrella */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BC4A0451903CEAE001304AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC4A09A1903EB5C001304AD /* TittieTwisterShellyHack.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC4A0421903CEAE001304AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC4A0591903CEAE001304AD /* SubSubUmbrella.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7BC4A06D1903CEAE001304AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BC4A06E1903CEAE001304AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7BC4A0701903CEAE001304AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "SubSubUmbrella-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7BC4A0711903CEAE001304AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "SubSubUmbrella-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BC4A0411903CEAE001304AD /* Build configuration list for PBXProject "SubSubUmbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC4A06D1903CEAE001304AD /* Debug */,
+				7BC4A06E1903CEAE001304AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC4A06F1903CEAE001304AD /* Build configuration list for PBXNativeTarget "SubSubUmbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC4A0701903CEAE001304AD /* Debug */,
+				7BC4A0711903CEAE001304AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BC4A03E1903CEAE001304AD /* Project object */;
+}

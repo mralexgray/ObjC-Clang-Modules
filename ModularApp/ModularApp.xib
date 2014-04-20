@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment version="1070" defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
@@ -661,7 +661,7 @@
                             <font key="font" metaFont="cellTitle"/>
                         </buttonCell>
                     </button>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="ouh-kW-Lx8">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="ouh-kW-Lx8">
                         <rect key="frame" x="9" y="6" width="179" height="31"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" placeholderString="Result" id="RSn-iS-S0O">
@@ -674,10 +674,26 @@
                         <rect key="frame" x="0.0" y="45" width="323" height="182"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </customView>
+                    <segmentedControl verticalHuggingPriority="750" id="VtM-Aq-29x">
+                        <rect key="frame" x="17" y="191" width="69" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <segmentedCell key="cell" alignment="left" style="texturedSquare" trackingMode="momentary" id="Hxa-hl-61S">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="☟"/>
+                                <segment label="☂" tag="1"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="tittieTwisterShellyHack:" target="b7X-xX-sgD" id="hYp-JM-AYP"/>
+                        </connections>
+                    </segmentedControl>
                 </subviews>
             </view>
         </window>
         <customObject id="494" customClass="ModularApp"/>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="b7X-xX-sgD" customClass="SubSubUmbrella"/>
+        <userDefaultsController representsSharedInstance="YES" id="7nu-1Y-4jJ"/>
     </objects>
 </document>
