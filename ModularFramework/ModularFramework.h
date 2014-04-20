@@ -3,6 +3,7 @@
 
 
 #import   "ModularSubLibrary.h"
+#import  "SubUmbrella.h"
 
 #define NSAPPMAIN NSApplicationMain
 

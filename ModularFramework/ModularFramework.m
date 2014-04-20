@@ -28,7 +28,8 @@
     }], mainAppView.layer);
 }
 
-+ (void) load {
+
++ (void) load { 
 
   [SUBLIB_NOT_CNTR addObserverForName:SUBLIB_APP_ACTV     object:nil
                                 queue:SUBLIB_OP_QUEUE usingBlock:^(NSNotification *n) {
@@ -44,7 +45,8 @@
 
   SubLibSetDockIcon([self moduleImageNamed:@"LLVM.logo"]);
   SubLibPrint(@"I'm here (%@), I'm modular... get used to it.", self);
-
+  id x = [NSClassFromString(@"SubUmbrella") new];
+  SubLibPrint(@"Ive got my sub_umbrella (%@), here too!", x);
 //  [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateDock) userInfo:nil repeats:YES];
 //  [NSTimer scheduledTimerWithTimeInterval:.1 invocation:(NSInvocation*)self repeats:YES];
   [[self.alloc initWithTarget:self timeInterval:0.1 repeats:YES] updateDock];

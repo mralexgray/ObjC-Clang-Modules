@@ -1,5 +1,7 @@
 
 @import   ModularFramework ;
+//@import   ModularFramework.SubUmbrella;
+
 
 @interface      ModularApp : NSObject @end
 
@@ -19,7 +21,7 @@
 
   SubLibPrint( ModularSubLibrary.new );
   SubLibPrint( SubLibRunCLITest()    );
-
+  SubLibPrint( SubUmbrella.new       );
 }
 
 - (void) testPrivateIvars:(PrivateIvar*)i {

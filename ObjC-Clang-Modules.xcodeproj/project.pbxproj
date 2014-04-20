@@ -34,14 +34,17 @@
 
 /* Begin PBXBuildFile section */
 		7B302F1F18961BDB0050EAF7 /* ModularFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEB40C9185799C600AF7C34 /* ModularFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B302F2018961BE60050EAF7 /* ModularFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB40CA185799C600AF7C34 /* ModularFramework.m */; };
 		7B302F3A1896501E0050EAF7 /* ModularSubLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B302F391896501E0050EAF7 /* ModularSubLibrary.m */; };
 		7B302F4D1896501E0050EAF7 /* ModularSubLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B302F4C1896501E0050EAF7 /* ModularSubLibraryTests.m */; };
 		7B302F56189650B40050EAF7 /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3EE33D189AAE370011F7DA /* ModularApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3EE33C189AAE370011F7DA /* ModularApp.xib */; };
 		7B6B3F9E189B0225003B3C45 /* libModularSubLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */; };
-		7B6B3FA1189B1442003B3C45 /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BB6588F189452DB0005DC6E /* LLVM.logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5C6D81893831700826BE8 /* LLVM.logo.icns */; };
+		7BD621191903AD2E004FB78D /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; };
+		7BD6211A1903AD3E004FB78D /* ModularFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD621151903AB05004FB78D /* ModularFramework.m */; };
+		7BD6211B1903AD4B004FB78D /* SubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB40CA185799C600AF7C34 /* SubUmbrella.m */; };
+		7BD621211903AE47004FB78D /* SubUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD6211F1903AE47004FB78D /* SubUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD621231903B754004FB78D /* SubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BD621141903AAB8004FB78D /* SubUmbrella.framework */; };
 		7BEB406B18578E5800AF7C34 /* ModularApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB406A18578E5800AF7C34 /* ModularApp.m */; };
 		7BEB40EA18579F3000AF7C34 /* module.map in Copy module.map */ = {isa = PBXBuildFile; fileRef = 7BEB40E618579B1B00AF7C34 /* module.map */; };
 /* End PBXBuildFile section */
@@ -75,9 +78,26 @@
 			remoteGlobalIDString = 7BEB40BF185799C500AF7C34;
 			remoteInfo = ModularFramework;
 		};
+		7BD621171903AC0F004FB78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD621021903AAB8004FB78D;
+			remoteInfo = SubUmbrellaFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7BD621221903B73C004FB78D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BD621231903B754004FB78D /* SubUmbrella.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BEB40E918579F2A00AF7C34 /* Copy module.map */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,12 +123,15 @@
 		7B7775701899A1B4002A4CBC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7B7775711899A1DB002A4CBC /* .modules-cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ".modules-cache"; sourceTree = "<group>"; };
 		7B77757A1899C152002A4CBC /* ModularCLI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularCLI.m; sourceTree = "<group>"; };
+		7BD621141903AAB8004FB78D /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModularFramework.m; sourceTree = "<group>"; };
+		7BD6211F1903AE47004FB78D /* SubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubUmbrella.h; sourceTree = "<group>"; };
 		7BE5C6D81893831700826BE8 /* LLVM.logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = LLVM.logo.icns; path = Icon/LLVM.logo.icns; sourceTree = "<group>"; };
 		7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ModularApp-Info.plist"; path = "ModularApp/ModularApp-Info.plist"; sourceTree = "<group>"; };
 		7BEB406A18578E5800AF7C34 /* ModularApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ModularApp.m; path = ModularApp/ModularApp.m; sourceTree = "<group>"; };
 		7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ModularFramework-Info.plist"; path = "ModularFramework/ModularFramework-Info.plist"; sourceTree = "<group>"; };
 		7BEB40C9185799C600AF7C34 /* ModularFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModularFramework.h; sourceTree = "<group>"; };
-		7BEB40CA185799C600AF7C34 /* ModularFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularFramework.m; sourceTree = "<group>"; };
+		7BEB40CA185799C600AF7C34 /* SubUmbrella.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubUmbrella.m; sourceTree = "<group>"; };
 		7BEB40E618579B1B00AF7C34 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = text; path = module.map; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,10 +169,21 @@
 			children = (
 				7B6B3F99189B01E3003B3C45 /* ModularApp.app */,
 				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
+				7BD621141903AAB8004FB78D /* SubUmbrella.framework */,
 				7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */,
 				7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */,
 			);
 			name = Prodcuts;
+			sourceTree = "<group>";
+		};
+		7BD6211D1903ADF8004FB78D /* SubUmbrella */ = {
+			isa = PBXGroup;
+			children = (
+				7BEB40CA185799C600AF7C34 /* SubUmbrella.m */,
+				7BD6211F1903AE47004FB78D /* SubUmbrella.h */,
+			);
+			name = SubUmbrella;
+			path = ModularFramework;
 			sourceTree = "<group>";
 		};
 		7BEB404B18578E5800AF7C34 = {
@@ -158,6 +192,7 @@
 				7B77757A1899C152002A4CBC /* ModularCLI.m */,
 				7BF5CC5B189737F4000FE0C2 /* ModularApp */,
 				7BEB40C2185799C600AF7C34 /* ModularFramework */,
+				7BD6211D1903ADF8004FB78D /* SubUmbrella */,
 				7B302F351896501E0050EAF7 /* ModularSubLibrary */,
 				7BF5CC5C18973854000FE0C2 /* Resources */,
 				7B6B3F9D189B01EE003B3C45 /* Prodcuts */,
@@ -169,7 +204,7 @@
 			children = (
 				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
 				7BEB40C9185799C600AF7C34 /* ModularFramework.h */,
-				7BEB40CA185799C600AF7C34 /* ModularFramework.m */,
+				7BD621151903AB05004FB78D /* ModularFramework.m */,
 				7BEB40E618579B1B00AF7C34 /* module.map */,
 			);
 			path = ModularFramework;
@@ -202,7 +237,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6B3FA1189B1442003B3C45 /* ModularSubLibrary.h in Headers */,
+				7BD621191903AD2E004FB78D /* ModularSubLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD621091903AAB8004FB78D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD621211903AE47004FB78D /* SubUmbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +295,22 @@
 			productReference = 7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7BD621021903AAB8004FB78D /* SubUmbrella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD621111903AAB8004FB78D /* Build configuration list for PBXNativeTarget "SubUmbrella" */;
+			buildPhases = (
+				7BD621051903AAB8004FB78D /* Sources */,
+				7BD621091903AAB8004FB78D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubUmbrella;
+			productName = ModularFramework;
+			productReference = 7BD621141903AAB8004FB78D /* SubUmbrella.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7BEB405318578E5800AF7C34 /* ModularApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BEB408518578E5900AF7C34 /* Build configuration list for PBXNativeTarget "ModularApp" */;
@@ -281,10 +340,12 @@
 				7BEB40E918579F2A00AF7C34 /* Copy module.map */,
 				7BEB40E718579DD800AF7C34 /* Run Script OFF */,
 				7BB6588E189452CF0005DC6E /* Resources */,
+				7BD621221903B73C004FB78D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BD621181903AC0F004FB78D /* PBXTargetDependency */,
 				7B302F551896509C0050EAF7 /* PBXTargetDependency */,
 			);
 			name = ModularFramework;
@@ -298,7 +359,7 @@
 		7BEB404C18578E5800AF7C34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alex Gray";
 				TargetAttributes = {
 					7B302F3E1896501E0050EAF7 = {
@@ -321,6 +382,7 @@
 			targets = (
 				7BEB405318578E5800AF7C34 /* ModularApp */,
 				7BEB40BF185799C500AF7C34 /* ModularFramework */,
+				7BD621021903AAB8004FB78D /* SubUmbrella */,
 				7B302F2C1896501D0050EAF7 /* ModularSubLibrary */,
 				7B302F3E1896501E0050EAF7 /* ModularSubLibraryTests */,
 				7B7775751899BE6E002A4CBC /* ModularCLI */,
@@ -358,7 +420,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7B50D3ED189B39D400B43467 /* Purge Cache on Fail */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -366,7 +428,7 @@
 			name = "Purge Cache on Fail";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "XBIN=\"${CODESIGNING_FOLDER_PATH}/../${EXECUTABLE_PATH}\"\neval \"otool -l $XBIN 2>&1 > /dev/null\"\nEXIT=$?\nif  [ $EXIT -ne 0 ]; then xcodebuild -target \"Clean Module Cache\"; else logger \"ret_code = $EXIT\"; fi\n\n#logger \"$(env |  grep ModularApp)\"\n#/Library/Frameworks/AtoZ.framework/AtoZ#STATUS=$()";
 		};
@@ -422,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "LIB=/Library/Frameworks\nBUILT=\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\"\nINSTALLED=\"$LIB/${WRAPPER_NAME}\"\n\nif [ -L \"$LIB/${WRAPPER_NAME}\" ]; then rm \"$LIB/${WRAPPER_NAME}\"; fi\n\n#sudo ln -sF \"$BUILT\" \"$LIB/\"\n#sudo chown root:wheel \"$INSTALLED\"\n\n#sudo chmod +a \"$USER allow list,search,add_file,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown\" \"$LIB\"\n\n#sudo mkdir -p \"$INSTALLED\"\n#sudo chmod +a \"$USER allow list,search,add_file,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown\" \"$INSTALLED\"\n\n\n# sudo ln -sF \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${SDKROOT}/System/Library/Frameworks/\"";
+			shellScript = "##LIB=/Library/Frameworks\n#BUILT=\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\"\n#INSTALLED=\"$LIB/${WRAPPER_NAME}\"\n\n#if [ -L \"$LIB/${WRAPPER_NAME}\" ]; then rm \"$LIB/${WRAPPER_NAME}\"; fi\n\n#sudo ln -sF \"$BUILT\" \"$LIB/\"\n#sudo chown root:wheel \"$INSTALLED\"\n\n#sudo chmod +a \"$USER allow list,search,add_file,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown\" \"$LIB\"\n\n#sudo mkdir -p \"$INSTALLED\"\n#sudo chmod +a \"$USER allow list,search,add_file,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown\" \"$INSTALLED\"\n\n\n# sudo ln -sF \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${SDKROOT}/System/Library/Frameworks/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -443,6 +505,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BD621051903AAB8004FB78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD6211B1903AD4B004FB78D /* SubUmbrella.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BEB405018578E5800AF7C34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,7 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B302F2018961BE60050EAF7 /* ModularFramework.m in Sources */,
+				7BD6211A1903AD3E004FB78D /* ModularFramework.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +551,11 @@
 			isa = PBXTargetDependency;
 			target = 7BEB40BF185799C500AF7C34 /* ModularFramework */;
 			targetProxy = 7B9F08FE189454D7000F35BA /* PBXContainerItemProxy */;
+		};
+		7BD621181903AC0F004FB78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD621021903AAB8004FB78D /* SubUmbrella */;
+			targetProxy = 7BD621171903AC0F004FB78D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -618,18 +693,34 @@
 			};
 			name = Release;
 		};
+		7BD621121903AAB8004FB78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = SubUmbrella;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7BD621131903AAB8004FB78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = SubUmbrella;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		7BEB408318578E5900AF7C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-fmodules-cache-path=\"$(PROJECT_DIR)/.modules-cache\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -640,14 +731,6 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-fmodules-cache-path=\"$(PROJECT_DIR)/.modules-cache\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -656,8 +739,14 @@
 		7BEB408618578E5900AF7C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_MODULES_AUTOLINK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-F",
+					build,
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -665,8 +754,14 @@
 		7BEB408718578E5900AF7C34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_MODULES_AUTOLINK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-F",
+					build,
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -674,12 +769,15 @@
 		7BEB40DF185799C900AF7C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
-				INSTALL_PATH = "@rpath";
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
@@ -691,8 +789,11 @@
 		7BEB40E0185799C900AF7C34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /;
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
-				INSTALL_PATH = "@rpath";
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
@@ -736,6 +837,15 @@
 			buildConfigurations = (
 				7BB65892189453800005DC6E /* Debug */,
 				7BB65893189453800005DC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD621111903AAB8004FB78D /* Build configuration list for PBXNativeTarget "SubUmbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD621121903AAB8004FB78D /* Debug */,
+				7BD621131903AAB8004FB78D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
