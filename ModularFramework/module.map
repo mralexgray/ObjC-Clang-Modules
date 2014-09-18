@@ -1,7 +1,7 @@
 // RUN: %clang_cc1 -Wauto-import -fmodules-cache-path=%t -fmodules -F %S/Inputs -F %S/Inputs/DependsOnModule.framework/Frameworks %s -verify
 
 
-framework module ModularFramework {
+framework module ModularFramework [system] {
   umbrella header "ModularFramework.h"
   module * { export * }
   export *
