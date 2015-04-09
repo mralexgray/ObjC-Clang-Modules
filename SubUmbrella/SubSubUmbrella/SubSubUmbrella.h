@@ -5,6 +5,6 @@
 
 +     (void) play;
 + (NSArray*) availableSounds;
-- (IBAction) tittieTwisterShellyHack:(id)x;
+- (IBAction) tittieTwisterShellyHack:x;
 
 @end

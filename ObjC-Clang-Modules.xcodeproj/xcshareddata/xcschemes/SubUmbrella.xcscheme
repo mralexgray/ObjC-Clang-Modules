@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BEB405318578E5800AF7C34"
-               BuildableName = "ModularApp.app"
-               BlueprintName = "ModularApp"
+               BlueprintIdentifier = "7BD621021903AAB8004FB78D"
+               BuildableName = "SubUmbrella.framework"
+               BlueprintName = "SubUmbrella"
                ReferencedContainer = "container:ObjC-Clang-Modules.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEB405318578E5800AF7C34"
-            BuildableName = "ModularApp.app"
-            BlueprintName = "ModularApp"
-            ReferencedContainer = "container:ObjC-Clang-Modules.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -48,16 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEB405318578E5800AF7C34"
-            BuildableName = "ModularApp.app"
-            BlueprintName = "ModularApp"
+            BlueprintIdentifier = "7BD621021903AAB8004FB78D"
+            BuildableName = "SubUmbrella.framework"
+            BlueprintName = "SubUmbrella"
             ReferencedContainer = "container:ObjC-Clang-Modules.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -67,16 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEB405318578E5800AF7C34"
-            BuildableName = "ModularApp.app"
-            BlueprintName = "ModularApp"
+            BlueprintIdentifier = "7BD621021903AAB8004FB78D"
+            BuildableName = "SubUmbrella.framework"
+            BlueprintName = "SubUmbrella"
             ReferencedContainer = "container:ObjC-Clang-Modules.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,11 +1,8 @@
 
 /**  ModularFramework.h  *//* © 𝟮𝟬𝟭𝟯 𝖠𝖫𝖤𝖷 𝖦𝖱𝖠𝖸  𝗀𝗂𝗍𝗁𝗎𝖻.𝖼𝗈𝗆/𝗺𝗿𝗮𝗹𝗲𝘅𝗴𝗿𝗮𝘆 */
 
-
 #import  "ModularSubLibrary.h"
-#import  <SubUmbrella/SubUmbrella.h>
-//#import  "SubSubUmbrella.h"
-//#import  <SubSubUmbrella/SubSubUmbrella.h>
+@import  SubUmbrella;
 
 #define NSAPPMAIN NSApplicationMain
 
@@ -22,3 +19,6 @@ CAAnimation * spin (CALayer* l);  // Actually implemented in "ModularSubLibrary"
 
 
 //NSString * SubLibRunCLITest();
+
+//#import  "SubSubUmbrella.h"
+//#import  <SubSubUmbrella/SubSubUmbrella.h>

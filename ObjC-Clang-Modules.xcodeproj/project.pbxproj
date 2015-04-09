@@ -35,29 +35,19 @@
 /* Begin PBXBuildFile section */
 		7B302F1F18961BDB0050EAF7 /* ModularFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEB40C9185799C600AF7C34 /* ModularFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B302F3A1896501E0050EAF7 /* ModularSubLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B302F391896501E0050EAF7 /* ModularSubLibrary.m */; };
-		7B302F4D1896501E0050EAF7 /* ModularSubLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B302F4C1896501E0050EAF7 /* ModularSubLibraryTests.m */; };
 		7B302F56189650B40050EAF7 /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3EE33D189AAE370011F7DA /* ModularApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3EE33C189AAE370011F7DA /* ModularApp.xib */; };
 		7B6B3F9E189B0225003B3C45 /* libModularSubLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */; };
 		7BB6588F189452DB0005DC6E /* LLVM.logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5C6D81893831700826BE8 /* LLVM.logo.icns */; };
-		7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */; };
+		7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7BD621191903AD2E004FB78D /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; };
 		7BD6211A1903AD3E004FB78D /* ModularFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD621151903AB05004FB78D /* ModularFramework.m */; };
 		7BD6211B1903AD4B004FB78D /* SubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB40CA185799C600AF7C34 /* SubUmbrella.m */; };
 		7BD621211903AE47004FB78D /* SubUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD6211F1903AE47004FB78D /* SubUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BD621231903B754004FB78D /* SubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BD621141903AAB8004FB78D /* SubUmbrella.framework */; };
 		7BEB406B18578E5800AF7C34 /* ModularApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB406A18578E5800AF7C34 /* ModularApp.m */; };
-		7BEB40EA18579F3000AF7C34 /* module.map in Copy module.map */ = {isa = PBXBuildFile; fileRef = 7BEB40E618579B1B00AF7C34 /* module.map */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B302F431896501E0050EAF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B302F2C1896501D0050EAF7;
-			remoteInfo = ModularSubLibrary;
-		};
 		7B302F541896509C0050EAF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
@@ -113,41 +103,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BD621221903B73C004FB78D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7BD621231903B754004FB78D /* SubUmbrella.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEB40E918579F2A00AF7C34 /* Copy module.map */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 1;
-			files = (
-				7BEB40EA18579F3000AF7C34 /* module.map in Copy module.map */,
-			);
-			name = "Copy module.map";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B302F381896501E0050EAF7 /* ModularSubLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModularSubLibrary.h; sourceTree = "<group>"; };
 		7B302F391896501E0050EAF7 /* ModularSubLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularSubLibrary.m; sourceTree = "<group>"; };
-		7B302F4C1896501E0050EAF7 /* ModularSubLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ModularSubLibraryTests.m; path = ModularSubLibraryTests/ModularSubLibraryTests.m; sourceTree = "<group>"; };
 		7B3EE33C189AAE370011F7DA /* ModularApp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModularApp.xib; path = ModularApp/ModularApp.xib; sourceTree = "<group>"; };
 		7B6B3F99189B01E3003B3C45 /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModularFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModularSubLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B77757A1899C152002A4CBC /* ModularCLI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularCLI.m; sourceTree = "<group>"; };
-		7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularSubLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubSubUmbrella.xcodeproj; path = SubUmbrella/SubSubUmbrella/SubSubUmbrella.xcodeproj; sourceTree = SOURCE_ROOT; };
-		7BD621141903AAB8004FB78D /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModularFramework.m; path = ModularFramework/ModularFramework.m; sourceTree = "<group>"; };
 		7BD6211F1903AE47004FB78D /* SubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubUmbrella.h; sourceTree = "<group>"; };
 		7BE5C6D81893831700826BE8 /* LLVM.logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = LLVM.logo.icns; path = ModularFramework/Icon/LLVM.logo.icns; sourceTree = "<group>"; };
@@ -160,13 +127,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B302F3C1896501E0050EAF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7B77757B1899E812002A4CBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,12 +138,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1DBB5B1AD675D800E62A09 /* ModularFramework Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BEB40E618579B1B00AF7C34 /* module.map */,
+				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
+				7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */,
+				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
+			);
+			name = "ModularFramework Resources";
+			sourceTree = "<group>";
+		};
 		7B302F351896501E0050EAF7 /* ModularSubLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				7B302F381896501E0050EAF7 /* ModularSubLibrary.h */,
 				7B302F391896501E0050EAF7 /* ModularSubLibrary.m */,
-				7B302F4C1896501E0050EAF7 /* ModularSubLibraryTests.m */,
 				7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */,
 			);
 			path = ModularSubLibrary;
@@ -200,12 +170,9 @@
 		7BC4A0971903E7FE001304AD /* ModularFramework */ = {
 			isa = PBXGroup;
 			children = (
+				7B1DBB5B1AD675D800E62A09 /* ModularFramework Resources */,
 				7BEB40C9185799C600AF7C34 /* ModularFramework.h */,
 				7BD621151903AB05004FB78D /* ModularFramework.m */,
-				7BEB40E618579B1B00AF7C34 /* module.map */,
-				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
-				7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */,
-				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
 				7B302F351896501E0050EAF7 /* ModularSubLibrary */,
 				7BD6211D1903ADF8004FB78D /* SubUmbrella */,
 			);
@@ -217,7 +184,6 @@
 			children = (
 				7BD6211F1903AE47004FB78D /* SubUmbrella.h */,
 				7BEB40CA185799C600AF7C34 /* SubUmbrella.m */,
-				7BD621141903AAB8004FB78D /* SubUmbrella.framework */,
 				7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */,
 			);
 			name = SubUmbrella;
@@ -229,7 +195,7 @@
 			children = (
 				7BF5CC5B189737F4000FE0C2 /* ModularApp */,
 				7BC4A0971903E7FE001304AD /* ModularFramework */,
-				7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */,
+				7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,24 +258,6 @@
 			productReference = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7B302F3E1896501E0050EAF7 /* ModularSubLibraryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B302F511896501E0050EAF7 /* Build configuration list for PBXNativeTarget "ModularSubLibraryTests" */;
-			buildPhases = (
-				7B302F3B1896501E0050EAF7 /* Sources */,
-				7B302F3C1896501E0050EAF7 /* Frameworks */,
-				7B302F3D1896501E0050EAF7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B302F441896501E0050EAF7 /* PBXTargetDependency */,
-			);
-			name = ModularSubLibraryTests;
-			productName = ModularSubLibraryTests;
-			productReference = 7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		7BD621021903AAB8004FB78D /* SubUmbrella */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BD621111903AAB8004FB78D /* Build configuration list for PBXNativeTarget "SubUmbrella" */;
@@ -325,7 +273,7 @@
 			);
 			name = SubUmbrella;
 			productName = ModularFramework;
-			productReference = 7BD621141903AAB8004FB78D /* SubUmbrella.framework */;
+			productReference = 7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7BEB405318578E5800AF7C34 /* ModularApp */ = {
@@ -354,10 +302,8 @@
 				7BEB40BB185799C500AF7C34 /* Sources */,
 				7B77757B1899E812002A4CBC /* Frameworks */,
 				7BEB40BD185799C500AF7C34 /* Headers */,
-				7BEB40E918579F2A00AF7C34 /* Copy module.map */,
 				7BEB40E718579DD800AF7C34 /* Run Script OFF */,
 				7BB6588E189452CF0005DC6E /* Resources */,
-				7BD621221903B73C004FB78D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -376,13 +322,8 @@
 		7BEB404C18578E5800AF7C34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Alex Gray";
-				TargetAttributes = {
-					7B302F3E1896501E0050EAF7 = {
-						TestTargetID = 7BEB405318578E5800AF7C34;
-					};
-				};
 			};
 			buildConfigurationList = 7BEB404F18578E5800AF7C34 /* Build configuration list for PBXProject "ObjC-Clang-Modules" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -403,11 +344,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				7BEB405318578E5800AF7C34 /* ModularApp */,
 				7BEB40BF185799C500AF7C34 /* ModularFramework */,
 				7BD621021903AAB8004FB78D /* SubUmbrella */,
 				7B302F2C1896501D0050EAF7 /* ModularSubLibrary */,
-				7B302F3E1896501E0050EAF7 /* ModularSubLibraryTests */,
+				7BEB405318578E5800AF7C34 /* ModularApp */,
 				7B7775751899BE6E002A4CBC /* ModularCLI */,
 				7BB65890189453800005DC6E /* Clean Module Cache */,
 			);
@@ -425,13 +365,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B302F3D1896501E0050EAF7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7BB6588E189452CF0005DC6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "XBIN=\"${CODESIGNING_FOLDER_PATH}/../${EXECUTABLE_PATH}\"\neval \"otool -l $XBIN 2>&1 > /dev/null\"\nEXIT=$?\nif  [ $EXIT -ne 0 ]; then xcodebuild -target \"Clean Module Cache\"; else logger \"ret_code = $EXIT\"; fi\n\n#logger \"$(env |  grep ModularApp)\"\n#/Library/Frameworks/AtoZ.framework/AtoZ#STATUS=$()";
+			shellScript = "#XBIN=\"${CODESIGNING_FOLDER_PATH}/../${EXECUTABLE_PATH}\"\n#eval \"otool -l $XBIN 2>&1 > /dev/null\"\n#EXIT=$?\n#if  [ $EXIT -ne 0 ]; then xcodebuild -target \"Clean Module Cache\"; else logger \"ret_code = $EXIT\"; fi\n\n#logger \"$(env |  grep ModularApp)\"\n#/Library/Frameworks/AtoZ.framework/AtoZ#STATUS=$()";
 		};
 		7B7775791899BE7A002A4CBC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -476,7 +409,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "chmod +x \"${SRCROOT}/ModularCLI.m\"\n\"${SRCROOT}/ModularCLI.m\"\n\n\n#/sd/UNIX/bin/prompt \"$(ls ${BUILT_PRODUCTS_DIR})\"\n\n#clang -fmodules \"${SRCROOT}/ModularCLI.m\" -o \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\"\n\n#X=$(\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\")\n#/sd/UNIX/bin/prompt \"$X\"\n\n#osascript -e 'tell app \"Finder\"' -e 'activate' -e 'set dialogResult to display dialog \"Name to use:\" default answer \"MyName\"' -e 'set fixedUserName to text returned of dialogResult' -e 'end tell' -e 'tell app \"Xcode\"' -e 'activate' -e 'end tell'";
+			shellScript = "#chmod +x \"${SRCROOT}/ModularCLI.m\" \"${SRCROOT}/ModularCLI.m\"\n\n\n#/sd/UNIX/bin/prompt \"$(ls ${BUILT_PRODUCTS_DIR})\"\n\n#clang -fmodules \"${SRCROOT}/ModularCLI.m\" -o \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\"\n\n#X=$(\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\")\n#/sd/UNIX/bin/prompt \"$X\"\n\n#osascript -e 'tell app \"Finder\"' -e 'activate' -e 'set dialogResult to display dialog \"Name to use:\" default answer \"MyName\"' -e 'set fixedUserName to text returned of dialogResult' -e 'end tell' -e 'tell app \"Xcode\"' -e 'activate' -e 'end tell'";
 		};
 		7BB65894189453920005DC6E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -530,14 +463,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B302F3B1896501E0050EAF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B302F4D1896501E0050EAF7 /* ModularSubLibraryTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7BD621051903AAB8004FB78D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,11 +490,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B302F441896501E0050EAF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B302F2C1896501D0050EAF7 /* ModularSubLibrary */;
-			targetProxy = 7B302F431896501E0050EAF7 /* PBXContainerItemProxy */;
-		};
 		7B302F551896509C0050EAF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7B302F2C1896501D0050EAF7 /* ModularSubLibrary */;
@@ -601,6 +521,8 @@
 		7B302F4F1896501E0050EAF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -608,98 +530,9 @@
 		7B302F501896501E0050EAF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		7B302F521896501E0050EAF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					SenTestingKit,
-				);
+				DEFINES_MODULE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7B302F531896501E0050EAF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -735,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -756,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				INSTALL_PATH = "@rpath";
 				OTHER_LDFLAGS = (
 					"-sub_umbrella",
@@ -816,9 +651,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = /;
+				DEFINES_MODULE = YES;
+				DSTROOT = "$(HOME)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -827,8 +662,6 @@
 				INSTALL_PATH = /Library/Frameworks;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
 					"-framework",
 					SubUmbrella,
 					"-sub_umbrella",
@@ -842,15 +675,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = /;
+				DEFINES_MODULE = YES;
+				DSTROOT = "$(HOME)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(TARGET_NAME)/$(TARGET_NAME)-Info.plist";
 				INSTALL_PATH = /Library/Frameworks;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
 					"-framework",
 					SubUmbrella,
 					"-sub_umbrella",
@@ -868,15 +699,6 @@
 			buildConfigurations = (
 				7B302F4F1896501E0050EAF7 /* Debug */,
 				7B302F501896501E0050EAF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B302F511896501E0050EAF7 /* Build configuration list for PBXNativeTarget "ModularSubLibraryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B302F521896501E0050EAF7 /* Debug */,
-				7B302F531896501E0050EAF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

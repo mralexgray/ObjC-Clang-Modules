@@ -21,14 +21,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		7BC4A03D1903CEAE001304AD = {
+		7B1DBB5A1AD6756200E62A09 /* SubSubUmbrella Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */,
-				7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */,
 				7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */,
 				7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */,
 				7BC4A0991903EA90001304AD /* SubSubUmbrella-Info.plist */,
+			);
+			name = "SubSubUmbrella Resources";
+			sourceTree = "<group>";
+		};
+		7BC4A03D1903CEAE001304AD = {
+			isa = PBXGroup;
+			children = (
+				7B1DBB5A1AD6756200E62A09 /* SubSubUmbrella Resources */,
+				7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */,
+				7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +153,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -160,6 +169,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;

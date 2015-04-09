@@ -1,10 +1,6 @@
 
 
-
-@import Cocoa;
-
-//#import <SubSubUmbrella/
-#import "SubSubUmbrella/SubSubUmbrella.h"
+@import SubSubUmbrella;
 
 @interface SubUmbrella : NSObject
 @end

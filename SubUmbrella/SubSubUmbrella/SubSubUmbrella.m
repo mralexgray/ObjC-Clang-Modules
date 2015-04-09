@@ -1,6 +1,4 @@
 
-
-
 #import "SubSubUmbrella.h"
 
 @implementation SubSubUmbrella static NSSound *s;  static int idx = 0;
