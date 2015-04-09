@@ -144,8 +144,8 @@
 		7B6B3F99189B01E3003B3C45 /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModularFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModularSubLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ModularSubLibraryTests.octest; path = "/Volumes/2T/ServiceData/dev/ObjC-Clang-Modules/build/Debug/ModularSubLibraryTests.octest"; sourceTree = "<absolute>"; };
 		7B77757A1899C152002A4CBC /* ModularCLI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularCLI.m; sourceTree = "<group>"; };
+		7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularSubLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubSubUmbrella.xcodeproj; path = SubUmbrella/SubSubUmbrella/SubSubUmbrella.xcodeproj; sourceTree = SOURCE_ROOT; };
 		7BD621141903AAB8004FB78D /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModularFramework.m; path = ModularFramework/ModularFramework.m; sourceTree = "<group>"; };
@@ -229,6 +229,7 @@
 			children = (
 				7BF5CC5B189737F4000FE0C2 /* ModularApp */,
 				7BC4A0971903E7FE001304AD /* ModularFramework */,
+				7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,7 +307,7 @@
 			);
 			name = ModularSubLibraryTests;
 			productName = ModularSubLibraryTests;
-			productReference = 7B6B3F9C189B01E3003B3C45 /* ModularSubLibraryTests.octest */;
+			productReference = 7BB8C7D71903F8AC006135AF /* ModularSubLibraryTests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7BD621021903AAB8004FB78D /* SubUmbrella */ = {

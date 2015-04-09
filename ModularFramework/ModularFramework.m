@@ -3,21 +3,13 @@
 
 #import "ModularFramework.h"
 
-@implementation ModularFramework { NSTimeInterval intrvl; BOOL rpts; id trgt;  NSTimer *tmr; /* This is what we are the proxy for. */ }
+@implementation ModularFramework {  NSTimeInterval intrvl; BOOL rpts; id trgt;
+                                    NSTimer *tmr; /* THIS is what we are the proxy for. */ }
 
-- (void) forwardInvocation:(NSInvocation*)inv {
-
-  inv.target = trgt; tmr = [NSTimer scheduledTimerWithTimeInterval:intrvl invocation:inv repeats:rpts];
-}
 - (NSMethodSignature*) methodSignatureForSelector:(SEL)sel { return [trgt methodSignatureForSelector:sel]; }
 
--   (id) initWithTarget:(id)t timeInterval:(NSTimeInterval)ti repeats:(BOOL)r { return trgt = t, intrvl = ti, rpts = r, self; }
-
-- (void) invalidate { if (tmr) [tmr invalidate], tmr = nil; }
-
-+ (void) updateDock { SUBLIB_DCK_TILE.contentView.frameCenterRotation += 2; [SUBLIB_DCK_TILE display]; }
-
-+ (CALayer*) mainAopLayer { static NSView *mainAppView; return (mainAppView) ? mainAppView.layer : (CALayer*)
++     (void)        updateDock { SUBLIB_DCK_TILE.contentView.frameCenterRotation += 2; [SUBLIB_DCK_TILE display]; }
++ (CALayer*)      mainAopLayer { static NSView *mainAppView; return (mainAppView) ? mainAppView.layer : (CALayer*)
 
     ([[NSApplication.sharedApplication.mainWindow.contentView subviews] enumerateObjectsUsingBlock:^(NSView *sub, NSUInteger i, BOOL *stp) {
 
@@ -27,21 +19,7 @@
         mainAppView.layer.borderWidth = 4; spin(mainAppView.layer); *stp = YES;
     }], mainAppView.layer);
 }
-
-
-+ (void) load { 
-
-  [SUBLIB_NOT_CNTR addObserverForName:SUBLIB_APP_ACTV     object:nil
-                                queue:SUBLIB_OP_QUEUE usingBlock:^(NSNotification *n) {
-
-    [self.mainAopLayer setBackgroundColor:SubLibRandomColor().CGColor];
-
-  }];
-}
-
-+ (NSImage*) moduleImageNamed:(NSString*)name { return [NSImage.alloc initWithContentsOfFile:[[NSBundle bundleForClass:self.class]pathForImageResource:name]]; }
-
-+ (void) beModular  {
++     (void)         beModular {
 
   SubLibSetDockIcon([self moduleImageNamed:@"LLVM.logo"]);
   SubLibPrint(@"I'm here (%@), I'm modular... get used to it.", self);
@@ -53,10 +31,34 @@
 
 
 }
++     (void)              load {
+
+  [SUBLIB_NOT_CNTR addObserverForName:SUBLIB_APP_ACTV     object:nil
+                                queue:SUBLIB_OP_QUEUE usingBlock:^(NSNotification *n) {
+
+    [self.mainAopLayer setBackgroundColor:SubLibRandomColor().CGColor];
+
+  }];
+}
+
++ (NSImage*)  moduleImageNamed:(NSString*)n {
+
+  return [NSImage.alloc initWithContentsOfFile:[[NSBundle bundleForClass:self.class]pathForImageResource:n]];
+}
+-     (void) forwardInvocation:(NSInvocation*)inv {
+
+  inv.target  = trgt;
+  tmr         = [NSTimer scheduledTimerWithTimeInterval:intrvl invocation:inv repeats:rpts];
+}
+-       (id)    initWithTarget:(id)t
+                  timeInterval:(NSTimeInterval)ti
+                       repeats:(BOOL)r {
+
+  return trgt = t, intrvl = ti, rpts = r, self;
+}
+-     (void) invalidate   { if (tmr) [tmr invalidate], tmr = nil; }
 
 @end
-
-
 
 @implementation PrivateIvar { @private id a; BOOL b; }
 
