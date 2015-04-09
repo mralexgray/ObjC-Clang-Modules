@@ -5,6 +5,9 @@
 
 @implementation SubUmbrella
 
--   (id) init  {  NSBeep(); return self = super.init ? NSLog(@"I AM HERE< I AM S UBLUMBRELLA!"), self : nil; }
+- init  { return self = super.init ?
+
+  NSBeep(), fprintf(stderr,"SUB-UMBRELLA FRAMEWORK INIT!"), self : nil;
+}
 
 @end

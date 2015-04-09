@@ -8,20 +8,29 @@
 
 - (NSMethodSignature*) methodSignatureForSelector:(SEL)sel { return [trgt methodSignatureForSelector:sel]; }
 
-+     (void)        updateDock { SUBLIB_DCK_TILE.contentView.frameCenterRotation += 2; [SUBLIB_DCK_TILE display]; }
-+ (CALayer*)      mainAopLayer { static NSView *mainAppView; return (mainAppView) ? mainAppView.layer : (CALayer*)
++     (void)   updateDock { SUBLIB_DCK_TILE.contentView.frameCenterRotation += 2; [SUBLIB_DCK_TILE display]; }
 
-    ([[NSApplication.sharedApplication.mainWindow.contentView subviews] enumerateObjectsUsingBlock:^(NSView *sub, NSUInteger i, BOOL *stp) {
++ (CALayer*) mainAopLayer { static NSView *mainAppView; return (mainAppView) ? mainAppView.layer : ({
 
-        if (![sub.identifier isEqualToString:@"LogoPlaceholder"]) return;
-        (mainAppView = sub).wantsLayer = YES;
-        mainAppView.layer.contents = [self moduleImageNamed:@"LLVM.logo"];
-        mainAppView.layer.borderWidth = 4; spin(mainAppView.layer); *stp = YES;
-    }], mainAppView.layer);
+    for (NSView *view in [NSApplication.sharedApplication.mainWindow.contentView subviews]) {
+
+        if (![view isKindOfClass:NSSplitView.class]) continue;
+        NSView *sub = view.subviews[1];
+        if (![sub.identifier isEqualToString:@"LogoPlaceholder"]) continue;
+        (mainAppView = sub).wantsLayer  = YES;
+        mainAppView.layer.contents      = [self moduleImageNamed:@"LLVM.logo"];
+        mainAppView.layer.borderWidth   = 4;
+        mainAppView.layer.zPosition   = -2000;
+        spin(mainAppView.layer); break;
+    }
+
+    mainAppView.layer; });
+
 }
 +     (void)         beModular {
 
   SubLibSetDockIcon([self moduleImageNamed:@"LLVM.logo"]);
+
   SubLibPrint(@"I'm here (%@), I'm modular... get used to it.", self);
   id x = [NSClassFromString(@"SubUmbrella") new];
   SubLibPrint(@"Ive got my sub_umbrella (%@), here too!", x);
@@ -60,13 +69,13 @@
 
 @end
 
-@implementation PrivateIvar { @private id a; BOOL b; }
+@implementation ModularFrameworkClass { @private id a; BOOL b; }
 
 - (id) init { return self = super.init ? a = @"apple", b = YES, self : nil; }
 
 @end
 
-@implementation SidewaysDep @end
+@implementation SidewaysDependentClass @end
 
 //  id x = [self.alloc initWithTarget:self timeInterval:0.5 repeats:NO];
 //  [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateDock) userInfo:nil repeats:YES];

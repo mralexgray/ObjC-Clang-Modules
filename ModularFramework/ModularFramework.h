@@ -1,24 +1,24 @@
 
-/**  ModularFramework.h  *//* © 𝟮𝟬𝟭𝟯 𝖠𝖫𝖤𝖷 𝖦𝖱𝖠𝖸  𝗀𝗂𝗍𝗁𝗎𝖻.𝖼𝗈𝗆/𝗺𝗿𝗮𝗹𝗲𝘅𝗴𝗿𝗮𝘆 */
+/**  ModularFramework.h  *//* © 𝟮𝟬𝟭𝟱 𝖠𝖫𝖤𝖷 𝖦𝖱𝖠𝖸  𝗀𝗂𝗍𝗁𝗎𝖻.𝖼𝗈𝗆/𝗺𝗿𝗮𝗹𝗲𝘅𝗴𝗿𝗮𝘆 */
 
-#import  "ModularSubLibrary.h"
 @import  SubUmbrella;
+#import  "ModularSubLibrary.h"
 
-#define NSAPPMAIN NSApplicationMain
-
-@interface         SidewaysDep : ModularSubLibrary
+@interface  SidewaysDependentClass : ModularSubLibrary
 @end
 
-@interface         PrivateIvar : NSObject
+@interface   ModularFrameworkClass : NSObject
 @end
 
-@interface    ModularFramework : NSProxy        + (void) beModular; /** Mainly proxies as a timer, but also has a few of it's own methods. */
+@interface        ModularFramework : NSProxy
+
++ (void) beModular; /** Mainly proxies as a timer, but also has a few of it's own methods. */
+
 @end
 
-CAAnimation * spin (CALayer* l);  // Actually implemented in "ModularSubLibrary", but declared and used here.
+extern CAAnimation * spin (CALayer* l);  // Actually implemented in "ModularSubLibrary", but declared and used here.
+
+
 
 
 //NSString * SubLibRunCLITest();
-
-//#import  "SubSubUmbrella.h"
-//#import  <SubSubUmbrella/SubSubUmbrella.h>

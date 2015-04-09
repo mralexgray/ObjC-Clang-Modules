@@ -1,10 +1,11 @@
 
-@import AppKit;
-
+@import            AppKit ;
 @interface SubSubUmbrella : NSObject <NSSoundDelegate>
 
-+     (void) play;
-+ (NSArray*) availableSounds;
+@property (readonly, copy) NSArrayController* availableSounds;
+
+- (void) play;
+
 - (IBAction) tittieTwisterShellyHack:x;
 
 @end

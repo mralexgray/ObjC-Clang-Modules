@@ -27,9 +27,10 @@ void SubLibSetDockIcon (NSImage*i) { NSDockTile *dock = NSApplication.sharedAppl
   iv.image          = i;   [dock display];
 }
 
- void SubLibPrint(id format, ...) { NSString *formatted = ![format isKindOfClass:NSString.class] ? [format description] :
+ void SubLibPrint(id format, ...) {
 
-  [format rangeOfString:@"%"].location == NSNotFound ? format : nil;
+  NSString *formatted = ![format isKindOfClass:NSString.class] ? [format description] :
+                         [format containsString:@"%"] ? format : nil;
   if (!formatted) {
       va_list argList;
       va_start (argList, format);

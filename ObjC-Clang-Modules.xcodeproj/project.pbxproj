@@ -19,17 +19,6 @@
 			name = ModularCLI;
 			productName = "Build CLI";
 		};
-		7BB65890189453800005DC6E /* Clean Module Cache */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 7BB65891189453800005DC6E /* Build configuration list for PBXAggregateTarget "Clean Module Cache" */;
-			buildPhases = (
-				7BB65894189453920005DC6E /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = "Clean Module Cache";
-			productName = "Clean Module Cache";
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -37,9 +26,8 @@
 		7B302F3A1896501E0050EAF7 /* ModularSubLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B302F391896501E0050EAF7 /* ModularSubLibrary.m */; };
 		7B302F56189650B40050EAF7 /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3EE33D189AAE370011F7DA /* ModularApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3EE33C189AAE370011F7DA /* ModularApp.xib */; };
-		7B6B3F9E189B0225003B3C45 /* libModularSubLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */; };
 		7BB6588F189452DB0005DC6E /* LLVM.logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5C6D81893831700826BE8 /* LLVM.logo.icns */; };
-		7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7BC459491AD689400097F508 /* libModularSubLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC459441AD689260097F508 /* libModularSubLibrary.a */; };
 		7BD621191903AD2E004FB78D /* ModularSubLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B302F381896501E0050EAF7 /* ModularSubLibrary.h */; };
 		7BD6211A1903AD3E004FB78D /* ModularFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD621151903AB05004FB78D /* ModularFramework.m */; };
 		7BD6211B1903AD4B004FB78D /* SubUmbrella.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB40CA185799C600AF7C34 /* SubUmbrella.m */; };
@@ -48,13 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B302F541896509C0050EAF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B302F2C1896501D0050EAF7;
-			remoteInfo = ModularSubLibrary;
-		};
 		7B791B41189AA01000BA9FBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
@@ -69,12 +50,19 @@
 			remoteGlobalIDString = 7BEB40BF185799C500AF7C34;
 			remoteInfo = ModularFramework;
 		};
-		7BC4A07A1903CEAE001304AD /* PBXContainerItemProxy */ = {
+		7BC459451AD689270097F508 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7BC4A0471903CEAE001304AD;
+			remoteGlobalIDString = 7BC459421AD689260097F508;
 			remoteInfo = SubSubUmbrella;
+		};
+		7BC459471AD689360097F508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEB404C18578E5800AF7C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B302F2C1896501D0050EAF7;
+			remoteInfo = ModularSubLibrary;
 		};
 		7BC4A0881903D11A001304AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -99,21 +87,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BC4A08B1903D135001304AD /* SubSubUmbrella.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B302F381896501E0050EAF7 /* ModularSubLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModularSubLibrary.h; sourceTree = "<group>"; };
 		7B302F391896501E0050EAF7 /* ModularSubLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularSubLibrary.m; sourceTree = "<group>"; };
 		7B3EE33C189AAE370011F7DA /* ModularApp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ModularApp.xib; path = ModularApp/ModularApp.xib; sourceTree = "<group>"; };
 		7B6B3F99189B01E3003B3C45 /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModularFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModularSubLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B77757A1899C152002A4CBC /* ModularCLI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModularCLI.m; sourceTree = "<group>"; };
+		7BC459431AD689260097F508 /* SubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC459441AD689260097F508 /* libModularSubLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModularSubLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SubSubUmbrella.xcodeproj; path = SubUmbrella/SubSubUmbrella/SubSubUmbrella.xcodeproj; sourceTree = SOURCE_ROOT; };
 		7BD621151903AB05004FB78D /* ModularFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModularFramework.m; path = ModularFramework/ModularFramework.m; sourceTree = "<group>"; };
 		7BD6211F1903AE47004FB78D /* SubUmbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubUmbrella.h; sourceTree = "<group>"; };
@@ -123,7 +110,6 @@
 		7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ModularFramework-Info.plist"; path = "ModularFramework/ModularFramework-Info.plist"; sourceTree = "<group>"; };
 		7BEB40C9185799C600AF7C34 /* ModularFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModularFramework.h; path = ModularFramework/ModularFramework.h; sourceTree = "<group>"; };
 		7BEB40CA185799C600AF7C34 /* SubUmbrella.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubUmbrella.m; sourceTree = "<group>"; };
-		7BEB40E618579B1B00AF7C34 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = text; name = module.map; path = ModularFramework/module.map; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6B3F9E189B0225003B3C45 /* libModularSubLibrary.a in Frameworks */,
+				7BC459491AD689400097F508 /* libModularSubLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +127,6 @@
 		7B1DBB5B1AD675D800E62A09 /* ModularFramework Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7BEB40E618579B1B00AF7C34 /* module.map */,
 				7B6B3F9A189B01E3003B3C45 /* ModularFramework.framework */,
 				7BEB40C4185799C600AF7C34 /* ModularFramework-Info.plist */,
 				7BE5C6D81893831700826BE8 /* LLVM.logo.icns */,
@@ -152,17 +137,27 @@
 		7B302F351896501E0050EAF7 /* ModularSubLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				7BC459441AD689260097F508 /* libModularSubLibrary.a */,
 				7B302F381896501E0050EAF7 /* ModularSubLibrary.h */,
 				7B302F391896501E0050EAF7 /* ModularSubLibrary.m */,
-				7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */,
 			);
 			path = ModularSubLibrary;
+			sourceTree = "<group>";
+		};
+		7BC4593B1AD67AF70097F508 /* ModularApp Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B6B3F99189B01E3003B3C45 /* ModularApp.app */,
+				7B3EE33C189AAE370011F7DA /* ModularApp.xib */,
+				7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */,
+			);
+			name = "ModularApp Resources";
 			sourceTree = "<group>";
 		};
 		7BC4A0761903CEAE001304AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */,
+				7BC459461AD689270097F508 /* SubSubUmbrella.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +177,7 @@
 		7BD6211D1903ADF8004FB78D /* SubUmbrella */ = {
 			isa = PBXGroup;
 			children = (
+				7BC459431AD689260097F508 /* SubUmbrella.framework */,
 				7BD6211F1903AE47004FB78D /* SubUmbrella.h */,
 				7BEB40CA185799C600AF7C34 /* SubUmbrella.m */,
 				7BC4A0751903CEAE001304AD /* SubSubUmbrella.xcodeproj */,
@@ -193,22 +189,11 @@
 		7BEB404B18578E5800AF7C34 = {
 			isa = PBXGroup;
 			children = (
-				7BF5CC5B189737F4000FE0C2 /* ModularApp */,
-				7BC4A0971903E7FE001304AD /* ModularFramework */,
-				7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */,
-			);
-			sourceTree = "<group>";
-		};
-		7BF5CC5B189737F4000FE0C2 /* ModularApp */ = {
-			isa = PBXGroup;
-			children = (
 				7B77757A1899C152002A4CBC /* ModularCLI.m */,
 				7BEB406A18578E5800AF7C34 /* ModularApp.m */,
-				7B6B3F99189B01E3003B3C45 /* ModularApp.app */,
-				7B3EE33C189AAE370011F7DA /* ModularApp.xib */,
-				7BEB405F18578E5800AF7C34 /* ModularApp-Info.plist */,
+				7BC4593B1AD67AF70097F508 /* ModularApp Resources */,
+				7BC4A0971903E7FE001304AD /* ModularFramework */,
 			);
-			name = ModularApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +240,7 @@
 			);
 			name = ModularSubLibrary;
 			productName = ModularSubLibrary;
-			productReference = 7B6B3F9B189B01E3003B3C45 /* libModularSubLibrary.a */;
+			productReference = 7BC459441AD689260097F508 /* libModularSubLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7BD621021903AAB8004FB78D /* SubUmbrella */ = {
@@ -273,7 +258,7 @@
 			);
 			name = SubUmbrella;
 			productName = ModularFramework;
-			productReference = 7B1DBB5C1AD6762300E62A09 /* SubUmbrella.framework */;
+			productReference = 7BC459431AD689260097F508 /* SubUmbrella.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7BEB405318578E5800AF7C34 /* ModularApp */ = {
@@ -308,8 +293,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				7BC459481AD689360097F508 /* PBXTargetDependency */,
 				7BD621181903AC0F004FB78D /* PBXTargetDependency */,
-				7B302F551896509C0050EAF7 /* PBXTargetDependency */,
 			);
 			name = ModularFramework;
 			productName = ModularFramework;
@@ -344,22 +329,21 @@
 			);
 			projectRoot = "";
 			targets = (
+				7BEB405318578E5800AF7C34 /* ModularApp */,
 				7BEB40BF185799C500AF7C34 /* ModularFramework */,
 				7BD621021903AAB8004FB78D /* SubUmbrella */,
 				7B302F2C1896501D0050EAF7 /* ModularSubLibrary */,
-				7BEB405318578E5800AF7C34 /* ModularApp */,
 				7B7775751899BE6E002A4CBC /* ModularCLI */,
-				7BB65890189453800005DC6E /* Clean Module Cache */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7BC4A07B1903CEAE001304AD /* SubSubUmbrella.framework */ = {
+		7BC459461AD689270097F508 /* SubSubUmbrella.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SubSubUmbrella.framework;
-			remoteRef = 7BC4A07A1903CEAE001304AD /* PBXContainerItemProxy */;
+			remoteRef = 7BC459451AD689270097F508 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -410,19 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#chmod +x \"${SRCROOT}/ModularCLI.m\" \"${SRCROOT}/ModularCLI.m\"\n\n\n#/sd/UNIX/bin/prompt \"$(ls ${BUILT_PRODUCTS_DIR})\"\n\n#clang -fmodules \"${SRCROOT}/ModularCLI.m\" -o \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\"\n\n#X=$(\"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}\")\n#/sd/UNIX/bin/prompt \"$X\"\n\n#osascript -e 'tell app \"Finder\"' -e 'activate' -e 'set dialogResult to display dialog \"Name to use:\" default answer \"MyName\"' -e 'set fixedUserName to text returned of dialogResult' -e 'end tell' -e 'tell app \"Xcode\"' -e 'activate' -e 'end tell'";
-		};
-		7BB65894189453920005DC6E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#rm -rfv \"${PROJECT_DIR}/.modules-cache/*\"\nrm -r \"${PROJECT_DIR}/.modules-cache\"\n\n#CACHE=\"${MODULE_CACHE_DIR}\"\n#for x in $(ls \"$CACHE\"); do\n#rm -r \"$CACHE/$x\"; done\n#open \"${MODULE_CACHE_DIR}\"";
 		};
 		7BE5C6DD1894499900826BE8 /* Run Script OFF */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -490,11 +461,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B302F551896509C0050EAF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B302F2C1896501D0050EAF7 /* ModularSubLibrary */;
-			targetProxy = 7B302F541896509C0050EAF7 /* PBXContainerItemProxy */;
-		};
 		7B791B42189AA01000BA9FBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BEB40BF185799C500AF7C34 /* ModularFramework */;
@@ -504,6 +470,11 @@
 			isa = PBXTargetDependency;
 			target = 7BEB40BF185799C500AF7C34 /* ModularFramework */;
 			targetProxy = 7B9F08FE189454D7000F35BA /* PBXContainerItemProxy */;
+		};
+		7BC459481AD689360097F508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B302F2C1896501D0050EAF7 /* ModularSubLibrary */;
+			targetProxy = 7BC459471AD689360097F508 /* PBXContainerItemProxy */;
 		};
 		7BC4A0891903D11A001304AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -544,20 +515,6 @@
 			name = Debug;
 		};
 		7B7775781899BE6F002A4CBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		7BB65892189453800005DC6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		7BB65893189453800005DC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -708,15 +665,6 @@
 			buildConfigurations = (
 				7B7775771899BE6F002A4CBC /* Debug */,
 				7B7775781899BE6F002A4CBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7BB65891189453800005DC6E /* Build configuration list for PBXAggregateTarget "Clean Module Cache" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7BB65892189453800005DC6E /* Debug */,
-				7BB65893189453800005DC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

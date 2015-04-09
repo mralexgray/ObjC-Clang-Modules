@@ -3,11 +3,11 @@
 @import                Cocoa ;
 @import           QuartzCore ;
 
-//#include                <Cocoa/Cocoa.h>
-//#include          <QuartzCore/QuartzCore.h>
-
 @interface ModularSubLibrary : NSObject @end
 
+#define SUBLIB_MAIN(...) int main(int c, const char **v) { @autoreleasepool { ({ __VA_ARGS__; }); } return 0; }
+
+#define SUBLIB_APP_MAIN  NSApplicationMain
 #define SUBLIB_OP_QUEUE  NSOperationQueue.mainQueue
 #define SUBLIB_NOT_CNTR  NSNotificationCenter.defaultCenter
 #define SUBLIB_APP_ACTV  NSApplicationDidBecomeActiveNotification
@@ -24,3 +24,4 @@ OBJC_EXPORT CGFloat  SubLibDeg2Rad (CGFloat);
 OBJC_EXPORT NSColor * SubLibRandomColor();
 
 OBJC_EXPORT NSString * SubLibRunCLITest();
+

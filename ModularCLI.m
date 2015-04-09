@@ -4,12 +4,11 @@ ECHO=$("$COMPILED"); SUCCESS=$(osascript -e "tell app \"System Events\" to displ
 rm "$COMPILED"; exit;
 */
 
-@import Foundation;
 @import ModularFramework;
 
-int main(int argc, char *argv[]) { @autoreleasepool {
+MAIN(
 
 	  	SubLibPrint(@"Hello %s (pid:%i)", [NSProcessInfo.processInfo.environment[@"USER"] UTF8String],
                                          NSProcessInfo.processInfo.processIdentifier);
 
-} return EXIT_SUCCESS; }
+)

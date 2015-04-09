@@ -13,7 +13,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubSubUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC459401AD688C30097F508 /* SubSubUmbrella.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SubSubUmbrella.framework; path = "/Volumes/2T/ServiceData/dev/ObjC-Clang-Modules/../../../../dd/DerivedData/ObjC-Clang-Modules-bkwbafdegyevptdjpyrfiqzpvhdm/Build/Products/Debug/SubSubUmbrella.framework"; sourceTree = "<absolute>"; };
+		7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SubSubUmbrella.framework; path = "/Volumes/2T/ServiceData/dev/ObjC-Clang-Modules/SubUmbrella/SubSubUmbrella/build/Debug/SubSubUmbrella.framework"; sourceTree = "<absolute>"; };
 		7BC4A0571903CEAE001304AD /* SubSubUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSubUmbrella.h; sourceTree = "<group>"; };
 		7BC4A0581903CEAE001304AD /* SubSubUmbrella.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSubUmbrella.m; sourceTree = "<group>"; };
 		7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TittieTwisterShellyHack.mp3; sourceTree = "<group>"; };
@@ -24,7 +25,7 @@
 		7B1DBB5A1AD6756200E62A09 /* SubSubUmbrella Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7BC4A0471903CEAE001304AD /* SubSubUmbrella.framework */,
+				7BC459401AD688C30097F508 /* SubSubUmbrella.framework */,
 				7BC4A0951903E775001304AD /* TittieTwisterShellyHack.mp3 */,
 				7BC4A0991903EA90001304AD /* SubSubUmbrella-Info.plist */,
 			);

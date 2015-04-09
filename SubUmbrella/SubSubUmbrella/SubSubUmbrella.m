@@ -1,44 +1,52 @@
 
+
 #import "SubSubUmbrella.h"
 
 @implementation SubSubUmbrella static NSSound *s;  static int idx = 0;
- 
-+ (instancetype) shared { static id _self; return _self = _self ?: self.new; }
 
-- (void) tittieTwisterShellyHack:(id)x { return 
+ - (void) tittieTwisterShellyHack:x {
 
-            [(id)x   selectedSegment]?self.class.play : ({ NSString *p;
-   !s ? p = [[NSBundle bundleForClass:self.class] pathForSoundResource:@"TittieTwisterShellyHack"] : nil;
-  !(s = s ?: [NSSound.alloc initWithContentsOfFile:p byReference:NO]) ? NSBeep() :
-  ({s.delegate = self.class.shared, [s play]; }); nil; });
-}
-
-+ (void) play {
-
-  NSSound* snd; if ((snd = [NSSound soundNamed:self.availableSounds[idx]])) {
-
-    snd.delegate = self.shared; [snd play];
+  if ([x selectedSegment])  return [self play];
+  if (!s) {
+    NSString *p = [[NSBundle bundleForClass:self.class] pathForSoundResource:@"TittieTwisterShellyHack"];
+    s = [NSSound.alloc initWithContentsOfFile:p byReference:NO];
+    s.delegate = self;
   }
+  [s play];
 }
 
-- (void)sound:(NSSound *)sound didFinishPlaying:(BOOL)aBool { NSSound* snd; idx++;
+- (void) play {
 
-    NSLog(@"SOund finished:%@", sound); if (sound == s) return;
-  
-    if (self.class.availableSounds.count > (idx + 1)  &&
-       (snd = [NSSound soundNamed:self.class.availableSounds[idx]])) {
+  NSSound* snd; if ((snd = [NSSound soundNamed:self.availableSounds.arrangedObjects[self.availableSounds.selectionIndex]])) {
 
-   
     snd.delegate = self; [snd play];
   }
 }
 
+- (void)sound:(NSSound *)sound didFinishPlaying:(BOOL)aBool {
+
+//  NSSound* snd;
+  idx++;
+
+    NSLog(@"Sound finished:%@", sound);
+//    if (sound == s) return;
+
+//    if (self.availableSounds.count > (idx + 1)  &&
+//
+//       (snd = [NSSound soundNamed:self.availableSounds[idx]])) {
+//
+//   
+//    snd.delegate = self; [snd play];
+//  }
+}
+
 #define Soundify(x) [x stringByAppendingString:@"/Sounds"]
+@synthesize availableSounds = _availableSounds;
+- (NSArrayController*) availableSounds { if (_availableSounds) return _availableSounds;
 
-+ (NSArray*) availableSounds { static NSMutableArray *snds = nil; return snds = snds ?: ({
-
-		     snds = NSMutableArray.new; NSString * sndDir, *sndFile; BOOL isDir; NSEnumerator 
-    * dirEnum = @[@"/System/Library/Sounds",@"/Library/Sounds",[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Sounds"]].objectEnumerator,
+    _availableSounds = NSArrayController.new;
+         NSString * sndDir, *sndFile; BOOL isDir;
+         NSEnumerator * dirEnum = @[@"/System/Library/Sounds",@"/Library/Sounds",[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Sounds"]].objectEnumerator,
    * fileEnum; 
 		
 		while ((sndDir = dirEnum.nextObject)) 
@@ -48,9 +56,16 @@
         
         while ((sndFile = fileEnum.nextObject))
           [NSSound.soundUnfilteredFileTypes containsObject:sndFile.pathExtension] 
-          ?	[snds addObject:sndFile.stringByDeletingPathExtension] : nil;
+          ?	[_availableSounds addObject:sndFile.stringByDeletingPathExtension] : nil;
       }
-		[snds sortedArrayUsingSelector:@selector(compare:)].copy;
-  });
+      [_availableSounds addObserver:self forKeyPath:@"selectionIndexes" options:NSKeyValueObservingOptionNew context:NULL];
+//		[/ sortedArrayUsingSelector:@selector(compare:)].copy;
+      return _availableSounds;
+}
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+
+  [self play];
 }
 @end
+
+//+ (instancetype) shared { static id _self; return _self = _self ?: self.new; }

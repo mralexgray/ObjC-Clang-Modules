@@ -2,9 +2,7 @@
 
 @import SubSubUmbrella;
 
-@interface SubUmbrella : NSObject
-@end
-
+@interface SubUmbrella : NSObject @end
 
 #define SUB_UMBRELLA_BEEP  NSBeep()
 
